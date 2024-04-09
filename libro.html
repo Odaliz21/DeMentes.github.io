@@ -12,7 +12,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Transportz</title>
+  <title>Transportes Express</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css"
@@ -31,16 +31,13 @@
 </head>
 
 <body>
-  <div class="hero_area custom_page-height">
-    <!-- header section strats -->
-    <section class="header_section">
+
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container d-lg-none">
           <a class="navbar-brand" href="#">
             <div class="logo-box">
-              <img src="images/logo.png" alt="">
               <span>
-                Transportz
+                Transportes Express
               </span>
             </div>
           </a>
@@ -56,9 +53,6 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="nosotros.html"> Nosotros </a>
-              </li>
-              <li class="nav-item">
-              <a class="nav-link" href="servicios.html"> servicios </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="flota.html"> flota</a>
@@ -80,55 +74,11 @@
         </nav>
         <div class="header_container ">
           <div class="logo-box">
-            <img src="images/logo.png" alt="">
             <span>
-              Transportz
+              Transportes Express
             </span>
           </div>
           <div>
-            <div class="header_top">
-              <div class="header_top-contact">
-
-                <a href="" class="ml-4">
-                  <div>
-                    <img src="images/phone.png" alt="" />
-                  </div>
-                  <span>
-                    (+71) 258964785
-                  </span>
-                </a>
-                <a href="" class="ml-4">
-                  <div>
-                    <img src="images/mail.png" alt="" />
-                  </div>
-                  <span>
-                    transportz@gmail.com
-                  </span>
-                </a>
-              </div>
-              <div class="header_top-social">
-                <div>
-                  <a href="">
-                    <img src="images/fb.png" alt="">
-                  </a>
-                </div>
-                <div>
-                  <a href="">
-                    <img src="images/twitter.png" alt="">
-                  </a>
-                </div>
-                <div>
-                  <a href="">
-                    <img src="images/g-plus.png" alt="">
-                  </a>
-                </div>
-                <div>
-                  <a href="">
-                    <img src="images/linkedin.png" alt="">
-                  </a>
-                </div>
-              </div>
-            </div>
             <div class="header_btm">
               <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
 
@@ -146,9 +96,6 @@
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="nosotros.html"> Nosotros </a>
-                      </li>
-                      <li class="nav-item">
-                      <a class="nav-link" href="servicios.html"> servicios </a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="flota.html"> flota</a>
@@ -180,109 +127,75 @@
 
   </div>
 
-
-
-
-  <!-- shop section -->
-  <section class="shop_section layout_padding">
-    <div class="container">
-      <div class="d-flex justify-content-center">
-        <h2 class="heading_style">
-          Our Shop
-        </h2>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="d-flex align-items-center h-100">
-            <div class="shop-detail">
-              <h5>
-                Everything You Need
-              </h5>
-              <p>
-                ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-              </p>
-            </div>
+<!-- shop section -->
+<section class="shop_section layout_padding">
+  <div class="container">
+    <div class="d-flex justify-content-center">
+      <h2 class="heading_style">
+        Trome - Libro de reclamaciones
+      </h2>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="d-flex align-items-center h-100">
+          <div class="shop-detail">
+            <h5>
+              Consulte el estado de su reclamo
+            </h5>
+           
+            <!-- Formulario de reclamo o queja -->
+            <form method="POST" action="/ruta/de/procesamiento" class="form-login">
+              <div class="form-group">
+                <!-- Cambio de color del texto "Número de reclamo" a blanco -->
+                <label for="nro_reclamo" style="color: white;">Nro de reclamo</label>
+                <input type="text" class="form-control" id="nro_reclamo" name="nro_reclamo" placeholder="Ingrese el número de reclamo">
+              </div>
+              <div class="form-group">
+                <label for="nombre" style="color: white;">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+              </div>
+              <div class="form-group">
+                <label for="tipo_documento"style="color: white;">Tipo de documento</label>
+                <select class="form-control" id="tipo_documento" name="tipo_documento">
+                  <option value="DNI">DNI</option>
+                  <option value="Pasaporte">Pasaporte</option>
+                  <!-- Agregar más opciones según sea necesario -->
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="num_documento"style="color: white;">Número de documento</label>
+                <input type="text" class="form-control" id="num_documento" name="num_documento" placeholder="Ingrese su número de documento">
+              </div>
+              <div class="form-group">
+                <label for="nombre" style="color: white;">Descripción del reclamo</label>
+                <input type="text" class="form-control" id="Descripción del reclamo" name="Descripción del reclamo" placeholder="Ingrese su Descripción ">
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="shop_img-box">
-            <img src="images/gift.jpg" alt="" class="img-fluid">
-          </div>
+      </div>
+      <div class="col-md-6">
+        <div class="shop_img-box">
+          <img src="images/libro.jpg" alt="" class="img-fluid"width="500" height="900">
         </div>
       </div>
     </div>
-  </section>
-  <!-- end shop section -->
+  </div>
+</section>
+<!-- end shop section -->
 
 
 
 
 
-  <!-- info section -->
-  <section class="info_section ">
-    <div class="container ">
-      <div class="row  mb-3 pb-4">
-        <div class="col-md-3 info_logo">
-          <div class="logo-box">
-            <img src="images/logo-white.png" alt="">
-            <span>
-              Transportz
-            </span>
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedconsectetur
-          </p>
-          <div class="info_social">
-            <div>
-              <a href="">
-                <img src="images/fb.png" alt="">
-              </a>
-            </div>
-            <div>
-              <a href="">
-                <img src="images/twitter.png" alt="">
-              </a>
-            </div>
-            <div>
-              <a href="">
-                <img src="images/g-plus.png" alt="">
-              </a>
-            </div>
-            <div>
-              <a href="">
-                <img src="images/linkedin.png" alt="">
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 info_address">
-          <h5>
-            Address
-          </h5>
-          <p>
-            Healing Center, 176 W Street name,
-            New York, NY 10014, US
-          </p>
-          <p>
-            (+71) 8522369417
-          </p>
-          <p>
-            (+71) 8522369417
-          </p>
-          <p>
-            <a href="">
-              transportz@gmail.com
-            </a>
-          </p>
-        </div>
-        <div class="col-md-3 info_links">
 
+  
           <div class="info_nav ">
             <nav class="">
               <ul>
                 <h5>
-                  Links
+              
                 </h5>
                 <li>
                   <a href="index.html"> Inicio</a>
@@ -314,38 +227,9 @@
             </nav>
           </div>
         </div>
-        <div class="col-md-3 info_news">
-          <h5>
-            Newsletter
-          </h5>
-          <form action="">
-            <div>
-              <input type="text" placeholder="Your Name">
-            </div>
-            <div>
-              <input type="email" placeholder="Email">
-            </div>
-            <div class="d-flex justify-content-end">
-              <button type="submit">
-                Subscribe
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
+  
 
-
-    </div>
-  </section>
-  <!-- end info section -->
-
-  <!-- footer section -->
-  <section class="container-fluid footer_section">
-    <p>
-      Copyright &copy; 2019 All Rights Reserved By
-      <a href="https://html.design/">Free Html Templates</a>
-    </p>
-  </section>
+ 
   <!-- footer section -->
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
